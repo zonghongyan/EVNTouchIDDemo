@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B1D11F61DB5F929000B6349 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D11F51DB5F929000B6349 /* main.m */; };
+		8B1D11F91DB5F929000B6349 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D11F81DB5F929000B6349 /* AppDelegate.m */; };
+		8B1D11FF1DB5F929000B6349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D11FD1DB5F929000B6349 /* Main.storyboard */; };
+		8B1D12011DB5F929000B6349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D12001DB5F929000B6349 /* Assets.xcassets */; };
+		8B1D12041DB5F929000B6349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D12021DB5F929000B6349 /* LaunchScreen.storyboard */; };
+		8B1D120F1DB5F929000B6349 /* EVNTouchIDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D120E1DB5F929000B6349 /* EVNTouchIDDemoTests.m */; };
+		8B1D12231DB5F963000B6349 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D12191DB5F963000B6349 /* README.md */; };
+		8B1D12241DB5F963000B6349 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D121C1DB5F963000B6349 /* BaseViewController.m */; };
+		8B1D12251DB5F963000B6349 /* EVNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D121E1DB5F963000B6349 /* EVNTabBarController.m */; };
+		8B1D12261DB5F963000B6349 /* UserLoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D12201DB5F963000B6349 /* UserLoginTableViewController.m */; };
+		8B1D12271DB5F963000B6349 /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D12221DB5F963000B6349 /* UserLoginViewController.m */; };
+		8B1D12321DB5FFA8000B6349 /* CategoryViewSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D122A1DB5FFA8000B6349 /* CategoryViewSelect.png */; };
+		8B1D12331DB5FFA8000B6349 /* CategoryViewUnSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D122B1DB5FFA8000B6349 /* CategoryViewUnSelect.png */; };
+		8B1D12341DB5FFA8000B6349 /* HostViewSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D122C1DB5FFA8000B6349 /* HostViewSelect.png */; };
+		8B1D12351DB5FFA8000B6349 /* HostViewUnSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D122D1DB5FFA8000B6349 /* HostViewUnSelect.png */; };
+		8B1D12381DB5FFA8000B6349 /* MeViewSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D12301DB5FFA8000B6349 /* MeViewSelect.png */; };
+		8B1D12391DB5FFA8000B6349 /* MeViewUnSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D12311DB5FFA8000B6349 /* MeViewUnSelect.png */; };
+		8B1D123D1DB601F2000B6349 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1D123C1DB601F2000B6349 /* LocalAuthentication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B1D120B1DB5F929000B6349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1D11E91DB5F929000B6349 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1D11F01DB5F929000B6349;
+			remoteInfo = EVNTouchIDDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B1D11F11DB5F929000B6349 /* EVNTouchIDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNTouchIDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1D11F51DB5F929000B6349 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B1D11F71DB5F929000B6349 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B1D11F81DB5F929000B6349 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B1D11FE1DB5F929000B6349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B1D12001DB5F929000B6349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1D12031DB5F929000B6349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B1D12051DB5F929000B6349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1D120A1DB5F929000B6349 /* EVNTouchIDDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVNTouchIDDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1D120E1DB5F929000B6349 /* EVNTouchIDDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVNTouchIDDemoTests.m; sourceTree = "<group>"; };
+		8B1D12101DB5F929000B6349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1D12191DB5F963000B6349 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8B1D121B1DB5F963000B6349 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8B1D121C1DB5F963000B6349 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8B1D121D1DB5F963000B6349 /* EVNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNTabBarController.h; sourceTree = "<group>"; };
+		8B1D121E1DB5F963000B6349 /* EVNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNTabBarController.m; sourceTree = "<group>"; };
+		8B1D121F1DB5F963000B6349 /* UserLoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginTableViewController.h; sourceTree = "<group>"; };
+		8B1D12201DB5F963000B6349 /* UserLoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginTableViewController.m; sourceTree = "<group>"; };
+		8B1D12211DB5F963000B6349 /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
+		8B1D12221DB5F963000B6349 /* UserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginViewController.m; sourceTree = "<group>"; };
+		8B1D122A1DB5FFA8000B6349 /* CategoryViewSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoryViewSelect.png; sourceTree = "<group>"; };
+		8B1D122B1DB5FFA8000B6349 /* CategoryViewUnSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoryViewUnSelect.png; sourceTree = "<group>"; };
+		8B1D122C1DB5FFA8000B6349 /* HostViewSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HostViewSelect.png; sourceTree = "<group>"; };
+		8B1D122D1DB5FFA8000B6349 /* HostViewUnSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HostViewUnSelect.png; sourceTree = "<group>"; };
+		8B1D12301DB5FFA8000B6349 /* MeViewSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeViewSelect.png; sourceTree = "<group>"; };
+		8B1D12311DB5FFA8000B6349 /* MeViewUnSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeViewUnSelect.png; sourceTree = "<group>"; };
+		8B1D123C1DB601F2000B6349 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B1D11EE1DB5F929000B6349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1D123D1DB601F2000B6349 /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1D12071DB5F929000B6349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B1D11E81DB5F929000B6349 = {
+			isa = PBXGroup;
+			children = (
+				8B1D12281DB5FFA8000B6349 /* ResourcesImage */,
+				8B1D12191DB5F963000B6349 /* README.md */,
+				8B1D121A1DB5F963000B6349 /* ViewControllers */,
+				8B1D11F31DB5F929000B6349 /* EVNTouchIDDemo */,
+				8B1D120D1DB5F929000B6349 /* EVNTouchIDDemoTests */,
+				8B1D11F21DB5F929000B6349 /* Products */,
+				8B1D123B1DB601F2000B6349 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B1D11F21DB5F929000B6349 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D11F11DB5F929000B6349 /* EVNTouchIDDemo.app */,
+				8B1D120A1DB5F929000B6349 /* EVNTouchIDDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B1D11F31DB5F929000B6349 /* EVNTouchIDDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D11F71DB5F929000B6349 /* AppDelegate.h */,
+				8B1D11F81DB5F929000B6349 /* AppDelegate.m */,
+				8B1D11FD1DB5F929000B6349 /* Main.storyboard */,
+				8B1D12001DB5F929000B6349 /* Assets.xcassets */,
+				8B1D12021DB5F929000B6349 /* LaunchScreen.storyboard */,
+				8B1D12051DB5F929000B6349 /* Info.plist */,
+				8B1D11F41DB5F929000B6349 /* Supporting Files */,
+			);
+			path = EVNTouchIDDemo;
+			sourceTree = "<group>";
+		};
+		8B1D11F41DB5F929000B6349 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D11F51DB5F929000B6349 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B1D120D1DB5F929000B6349 /* EVNTouchIDDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D120E1DB5F929000B6349 /* EVNTouchIDDemoTests.m */,
+				8B1D12101DB5F929000B6349 /* Info.plist */,
+			);
+			path = EVNTouchIDDemoTests;
+			sourceTree = "<group>";
+		};
+		8B1D121A1DB5F963000B6349 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D121B1DB5F963000B6349 /* BaseViewController.h */,
+				8B1D121C1DB5F963000B6349 /* BaseViewController.m */,
+				8B1D121D1DB5F963000B6349 /* EVNTabBarController.h */,
+				8B1D121E1DB5F963000B6349 /* EVNTabBarController.m */,
+				8B1D121F1DB5F963000B6349 /* UserLoginTableViewController.h */,
+				8B1D12201DB5F963000B6349 /* UserLoginTableViewController.m */,
+				8B1D12211DB5F963000B6349 /* UserLoginViewController.h */,
+				8B1D12221DB5F963000B6349 /* UserLoginViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8B1D12281DB5FFA8000B6349 /* ResourcesImage */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D12291DB5FFA8000B6349 /* tabbarImage */,
+			);
+			path = ResourcesImage;
+			sourceTree = "<group>";
+		};
+		8B1D12291DB5FFA8000B6349 /* tabbarImage */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D122A1DB5FFA8000B6349 /* CategoryViewSelect.png */,
+				8B1D122B1DB5FFA8000B6349 /* CategoryViewUnSelect.png */,
+				8B1D122C1DB5FFA8000B6349 /* HostViewSelect.png */,
+				8B1D122D1DB5FFA8000B6349 /* HostViewUnSelect.png */,
+				8B1D12301DB5FFA8000B6349 /* MeViewSelect.png */,
+				8B1D12311DB5FFA8000B6349 /* MeViewUnSelect.png */,
+			);
+			path = tabbarImage;
+			sourceTree = "<group>";
+		};
+		8B1D123B1DB601F2000B6349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D123C1DB601F2000B6349 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B1D11F01DB5F929000B6349 /* EVNTouchIDDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1D12131DB5F929000B6349 /* Build configuration list for PBXNativeTarget "EVNTouchIDDemo" */;
+			buildPhases = (
+				8B1D11ED1DB5F929000B6349 /* Sources */,
+				8B1D11EE1DB5F929000B6349 /* Frameworks */,
+				8B1D11EF1DB5F929000B6349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EVNTouchIDDemo;
+			productName = EVNTouchIDDemo;
+			productReference = 8B1D11F11DB5F929000B6349 /* EVNTouchIDDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B1D12091DB5F929000B6349 /* EVNTouchIDDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1D12161DB5F929000B6349 /* Build configuration list for PBXNativeTarget "EVNTouchIDDemoTests" */;
+			buildPhases = (
+				8B1D12061DB5F929000B6349 /* Sources */,
+				8B1D12071DB5F929000B6349 /* Frameworks */,
+				8B1D12081DB5F929000B6349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1D120C1DB5F929000B6349 /* PBXTargetDependency */,
+			);
+			name = EVNTouchIDDemoTests;
+			productName = EVNTouchIDDemoTests;
+			productReference = 8B1D120A1DB5F929000B6349 /* EVNTouchIDDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B1D11E91DB5F929000B6349 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = YUANDONG;
+				TargetAttributes = {
+					8B1D11F01DB5F929000B6349 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2H6767RL8U;
+						ProvisioningStyle = Automatic;
+					};
+					8B1D12091DB5F929000B6349 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B1D11F01DB5F929000B6349;
+					};
+				};
+			};
+			buildConfigurationList = 8B1D11EC1DB5F929000B6349 /* Build configuration list for PBXProject "EVNTouchIDDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B1D11E81DB5F929000B6349;
+			productRefGroup = 8B1D11F21DB5F929000B6349 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B1D11F01DB5F929000B6349 /* EVNTouchIDDemo */,
+				8B1D12091DB5F929000B6349 /* EVNTouchIDDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B1D11EF1DB5F929000B6349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1D12041DB5F929000B6349 /* LaunchScreen.storyboard in Resources */,
+				8B1D12011DB5F929000B6349 /* Assets.xcassets in Resources */,
+				8B1D12321DB5FFA8000B6349 /* CategoryViewSelect.png in Resources */,
+				8B1D12391DB5FFA8000B6349 /* MeViewUnSelect.png in Resources */,
+				8B1D11FF1DB5F929000B6349 /* Main.storyboard in Resources */,
+				8B1D12381DB5FFA8000B6349 /* MeViewSelect.png in Resources */,
+				8B1D12341DB5FFA8000B6349 /* HostViewSelect.png in Resources */,
+				8B1D12331DB5FFA8000B6349 /* CategoryViewUnSelect.png in Resources */,
+				8B1D12351DB5FFA8000B6349 /* HostViewUnSelect.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1D12081DB5F929000B6349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B1D11ED1DB5F929000B6349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1D12251DB5F963000B6349 /* EVNTabBarController.m in Sources */,
+				8B1D12241DB5F963000B6349 /* BaseViewController.m in Sources */,
+				8B1D12271DB5F963000B6349 /* UserLoginViewController.m in Sources */,
+				8B1D11F91DB5F929000B6349 /* AppDelegate.m in Sources */,
+				8B1D12231DB5F963000B6349 /* README.md in Sources */,
+				8B1D11F61DB5F929000B6349 /* main.m in Sources */,
+				8B1D12261DB5F963000B6349 /* UserLoginTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1D12061DB5F929000B6349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1D120F1DB5F929000B6349 /* EVNTouchIDDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B1D120C1DB5F929000B6349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1D11F01DB5F929000B6349 /* EVNTouchIDDemo */;
+			targetProxy = 8B1D120B1DB5F929000B6349 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B1D11FD1DB5F929000B6349 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1D11FE1DB5F929000B6349 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B1D12021DB5F929000B6349 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1D12031DB5F929000B6349 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B1D12111DB5F929000B6349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B1D12121DB5F929000B6349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B1D12141DB5F929000B6349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = EVNTouchIDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B1D12151DB5F929000B6349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = EVNTouchIDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8B1D12171DB5F929000B6349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EVNTouchIDDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNTouchIDDemo.app/EVNTouchIDDemo";
+			};
+			name = Debug;
+		};
+		8B1D12181DB5F929000B6349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EVNTouchIDDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNTouchIDDemo.app/EVNTouchIDDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B1D11EC1DB5F929000B6349 /* Build configuration list for PBXProject "EVNTouchIDDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1D12111DB5F929000B6349 /* Debug */,
+				8B1D12121DB5F929000B6349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1D12131DB5F929000B6349 /* Build configuration list for PBXNativeTarget "EVNTouchIDDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1D12141DB5F929000B6349 /* Debug */,
+				8B1D12151DB5F929000B6349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B1D12161DB5F929000B6349 /* Build configuration list for PBXNativeTarget "EVNTouchIDDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1D12171DB5F929000B6349 /* Debug */,
+				8B1D12181DB5F929000B6349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B1D11E91DB5F929000B6349 /* Project object */;
+}
