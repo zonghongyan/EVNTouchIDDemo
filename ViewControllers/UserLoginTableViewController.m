@@ -175,6 +175,9 @@
                 NSLog(@"指纹认证成功");
 
                 weakSelf.helper.isAppCurrentLoginState = YES;
+
+                weakSelf.logoutBtnAction.hidden = NO;
+                weakSelf.userInfo.text = @"仁伯安";
             }
             else
             {
