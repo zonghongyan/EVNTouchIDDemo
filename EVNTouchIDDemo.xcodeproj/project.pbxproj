@@ -80,6 +80,7 @@
 		8B4E8AFB1DB605640080E96C /* MeViewUnSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeViewUnSelect.png; sourceTree = "<group>"; };
 		8B4E8B091DB6133C0080E96C /* EVNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNHelper.h; sourceTree = "<group>"; };
 		8B4E8B0A1DB6133C0080E96C /* EVNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNHelper.m; sourceTree = "<group>"; };
+		8B4E8B0C1DB61E9D0080E96C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +105,9 @@
 		8B1D11E81DB5F929000B6349 = {
 			isa = PBXGroup;
 			children = (
+				8B1D12191DB5F963000B6349 /* README.md */,
 				8B4E8B081DB613250080E96C /* Tools */,
 				8B4E8AED1DB605640080E96C /* ResourcesImage */,
-				8B1D12191DB5F963000B6349 /* README.md */,
 				8B1D121A1DB5F963000B6349 /* ViewControllers */,
 				8B1D11F31DB5F929000B6349 /* EVNTouchIDDemo */,
 				8B1D120D1DB5F929000B6349 /* EVNTouchIDDemoTests */,
@@ -134,6 +135,7 @@
 				8B1D12021DB5F929000B6349 /* LaunchScreen.storyboard */,
 				8B1D12051DB5F929000B6349 /* Info.plist */,
 				8B1D11F41DB5F929000B6349 /* Supporting Files */,
+				8B4E8B0C1DB61E9D0080E96C /* PrefixHeader.pch */,
 			);
 			path = EVNTouchIDDemo;
 			sourceTree = "<group>";

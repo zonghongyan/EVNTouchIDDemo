@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  EVNTouchIDDemo
+//
+//  Created by developer on 2016/10/18.
+//  Copyright © 2016年 YUANDONG. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 用来处理Xcode8下iOS10日志信息输出问题
+#ifdef DEBUG
+#define NSLog(format, ...)  printf("[%s] %s [%d line] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String])
+
+#else
+#define NSLog(format, ...)
+#endif
+
+#endif /* PrefixHeader_pch */
