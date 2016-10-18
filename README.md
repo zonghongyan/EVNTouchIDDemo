@@ -1,5 +1,8 @@
 # EVNTouchIDDemo
 
+
+[](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.20.38.png)
+
 ```
 /**
  * 指纹登录验证
@@ -123,3 +126,11 @@
 }
 
 ```
+
+[](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.20.06.png)
+
+[](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.19.55.png)
+[](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.18.56.png)
+[](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.18.39.png)
+[](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.18.27.png)
+
