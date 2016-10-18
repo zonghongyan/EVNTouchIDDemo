@@ -31,6 +31,7 @@
 		8B4E8B051DB605640080E96C /* HostViewUnSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4E8AF91DB605640080E96C /* HostViewUnSelect.png */; };
 		8B4E8B061DB605640080E96C /* MeViewSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4E8AFA1DB605640080E96C /* MeViewSelect.png */; };
 		8B4E8B071DB605640080E96C /* MeViewUnSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4E8AFB1DB605640080E96C /* MeViewUnSelect.png */; };
+		8B4E8B0B1DB6133C0080E96C /* EVNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4E8B0A1DB6133C0080E96C /* EVNHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		8B4E8AF91DB605640080E96C /* HostViewUnSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HostViewUnSelect.png; sourceTree = "<group>"; };
 		8B4E8AFA1DB605640080E96C /* MeViewSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeViewSelect.png; sourceTree = "<group>"; };
 		8B4E8AFB1DB605640080E96C /* MeViewUnSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeViewUnSelect.png; sourceTree = "<group>"; };
+		8B4E8B091DB6133C0080E96C /* EVNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNHelper.h; sourceTree = "<group>"; };
+		8B4E8B0A1DB6133C0080E96C /* EVNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		8B1D11E81DB5F929000B6349 = {
 			isa = PBXGroup;
 			children = (
+				8B4E8B081DB613250080E96C /* Tools */,
 				8B4E8AED1DB605640080E96C /* ResourcesImage */,
 				8B1D12191DB5F963000B6349 /* README.md */,
 				8B1D121A1DB5F963000B6349 /* ViewControllers */,
@@ -207,6 +211,15 @@
 				8B4E8AFB1DB605640080E96C /* MeViewUnSelect.png */,
 			);
 			path = tabbarImage;
+			sourceTree = "<group>";
+		};
+		8B4E8B081DB613250080E96C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8B4E8B091DB6133C0080E96C /* EVNHelper.h */,
+				8B4E8B0A1DB6133C0080E96C /* EVNHelper.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +344,7 @@
 				8B1D12231DB5F963000B6349 /* README.md in Sources */,
 				8B1D11F61DB5F929000B6349 /* main.m in Sources */,
 				8B1D12261DB5F963000B6349 /* UserLoginTableViewController.m in Sources */,
+				8B4E8B0B1DB6133C0080E96C /* EVNHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

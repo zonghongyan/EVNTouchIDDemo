@@ -9,8 +9,12 @@
 #import "UserLoginTableViewController.h"
 #import "UserLoginViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "EVNHelper.h"
 
 @interface UserLoginTableViewController ()
+{
+
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *logoutBtnAction;
 
@@ -18,7 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *userInfo;
 
-@property (assign, nonatomic) BOOL isJustNow; // 是不是刚启动APP
+@property (strong, nonatomic) EVNHelper *helper;
 
 @end
 
@@ -28,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.helper = [EVNHelper shareHelper];
     self.logoutBtnAction.hidden = YES; // 初始化时候就是未登录状态
 }
 
@@ -53,7 +58,7 @@
     {
         NSNumber *isStartAutoLoginState = [[NSUserDefaults standardUserDefaults] objectForKey:@"startAutoLoginState"];
 
-        if (indexPath.row == 0 && [self loginState] && [isStartAutoLoginState boolValue] && !_isJustNow) // 如果用户登录过且为登录状态，而且开启指纹登录
+        if (indexPath.row == 0 && [self loginState] && [isStartAutoLoginState boolValue]) // 如果用户登录过且为登录状态，而且开启指纹登录
         {
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"验证登录" message:@"是否使用指纹登录" preferredStyle:UIAlertControllerStyleAlert];
 
@@ -70,7 +75,7 @@
             [alertController addAction:startUseAction];
             [self presentViewController:alertController animated:YES completion:nil];
         }
-        else if (indexPath.row == 0 && !_isJustNow)
+        else if (indexPath.row == 0 && !_helper.isAppCurrentLoginState)
         {
             [self commonLogin]; // 普通登录
         }
@@ -94,6 +99,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:@NO forKey:@"loginState"];
     self.userInfo.text = @"用户登录";
     sender.hidden = YES;
+
+    _helper.isAppCurrentLoginState = NO;
 }
 
 /**
@@ -119,7 +126,8 @@
 - (BOOL)loginState
 {
     NSNumber *isLoginState = [[NSUserDefaults standardUserDefaults] objectForKey:@"loginState"];
-    if ([isLoginState boolValue])
+
+    if ([isLoginState boolValue] && _helper.isAppCurrentLoginState)
     {
         return YES;
     }
@@ -141,8 +149,6 @@
         weakSelf.isAutoLogin.on = [isStartAutoLoginState boolValue];
 
         weakSelf.userInfo.text = @"仁伯安";
-
-        weakSelf.isJustNow = YES;
     };
     [self presentViewController:userLoginViewController animated:YES completion:nil];
 }
@@ -152,6 +158,8 @@
  */
 - (void)loadAuthentication
 {
+    __weak typeof(self) weakSelf = self;
+
     LAContext *myContext = [[LAContext alloc] init];
     // 这个属性是设置指纹输入失败之后的弹出框的选项
     myContext.localizedFallbackTitle = @"忘记密码";
@@ -165,9 +173,12 @@
             if(success)
             {
                 NSLog(@"指纹认证成功");
+
+                weakSelf.helper.isAppCurrentLoginState = YES;
             }
             else
             {
+                weakSelf.helper.isAppCurrentLoginState = NO;
                 NSLog(@"指纹认证失败，%@",error.description);
 
                 NSLog(@"%ld", (long)error.code); // 错误码 error.code
@@ -247,6 +258,7 @@
     {
         NSLog(@"设备不支持指纹");
         NSLog(@"%ld", (long)authError.code);
+        weakSelf.helper.isAppCurrentLoginState = NO;
         switch (authError.code)
         {
             case LAErrorTouchIDNotEnrolled:
