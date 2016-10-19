@@ -34,6 +34,14 @@
     [super viewDidLoad];
     self.helper = [EVNHelper shareHelper];
     self.logoutBtnAction.hidden = YES; // 初始化时候就是未登录状态
+
+    LAContext *context = [[LAContext alloc] init]; // 初始化上下文对象
+    NSError *error = nil;
+    // 判断设备是否支持指纹识别功能
+    if (![context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error])
+    {
+        // 设备不支持，隐藏掉指纹登录cell，Demo不再实现
+    }
 }
 
 - (void)didReceiveMemoryWarning {

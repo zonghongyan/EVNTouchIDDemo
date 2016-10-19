@@ -8,6 +8,7 @@
 
 #import "UserLoginViewController.h"
 #import "EVNHelper.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface UserLoginViewController ()
 
@@ -46,28 +47,41 @@
     EVNHelper *helper = [EVNHelper shareHelper];
     helper.isAppCurrentLoginState = YES;
 
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"登录成功！" message:@"是否启用指纹登录" preferredStyle:UIAlertControllerStyleAlert];
+    LAContext *context = [[LAContext alloc] init]; // 初始化上下文对象
+    NSError *error = nil;
+    // 判断设备是否支持指纹识别功能
+    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error])
+    {
+        // 支持指纹验证
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"登录成功！" message:@"是否启用指纹登录" preferredStyle:UIAlertControllerStyleAlert];
 
-    __weak typeof (self) weakSelf = self;
+        __weak typeof (self) weakSelf = self;
 
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"稍后" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"稍后" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"startAutoLoginState"];
+            weakSelf.transLoginStateBlock(); // 回传
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }];
+
+        UIAlertAction *startUseAction = [UIAlertAction actionWithTitle:@"启用" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"startAutoLoginState"];
+            weakSelf.transLoginStateBlock(); // 回传
+            [self dismissViewControllerAnimated:YES completion:nil];
+
+        }];
+        [alertController addAction:cancelAction];
+        [alertController addAction:startUseAction];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    else
+    {
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"startAutoLoginState"];
-        weakSelf.transLoginStateBlock(); // 回传
+        self.transLoginStateBlock(); // 回传
         [self dismissViewControllerAnimated:YES completion:nil];
-    }];
-
-    UIAlertAction *startUseAction = [UIAlertAction actionWithTitle:@"启用" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-
-        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"startAutoLoginState"];
-        weakSelf.transLoginStateBlock(); // 回传
-        [self dismissViewControllerAnimated:YES completion:nil];
-
-    }];
-    [alertController addAction:cancelAction];
-    [alertController addAction:startUseAction];
-
-    [self presentViewController:alertController animated:YES completion:nil];
+    }
 
 }
 
