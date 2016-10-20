@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>todayWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>8B1D12091DB5F929000B6349</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B592CDE1DB8B6510096DF14</key>
 		<dict>
 			<key>primary</key>
 			<true/>

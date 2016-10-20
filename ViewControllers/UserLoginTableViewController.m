@@ -65,8 +65,9 @@
     if (indexPath.section == 0)
     {
         NSNumber *isStartAutoLoginState = [[NSUserDefaults standardUserDefaults] objectForKey:@"startAutoLoginState"];
+        NSNumber *isLoginState = [[NSUserDefaults standardUserDefaults] objectForKey:@"loginState"];
 
-        if (indexPath.row == 0 && [self loginState] && [isStartAutoLoginState boolValue]) // 如果用户登录过且为登录状态，而且开启指纹登录
+        if (indexPath.row == 0 && [isLoginState boolValue] && [isStartAutoLoginState boolValue]  && !_helper.isAppCurrentLoginState) // 如果用户登录过且为登录状态，而且开启指纹登录
         {
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"验证登录" message:@"是否使用指纹登录" preferredStyle:UIAlertControllerStyleAlert];
 

@@ -32,6 +32,10 @@
 		8B4E8B061DB605640080E96C /* MeViewSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4E8AFA1DB605640080E96C /* MeViewSelect.png */; };
 		8B4E8B071DB605640080E96C /* MeViewUnSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4E8AFB1DB605640080E96C /* MeViewUnSelect.png */; };
 		8B4E8B0B1DB6133C0080E96C /* EVNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4E8B0A1DB6133C0080E96C /* EVNHelper.m */; };
+		8B592CE11DB8B6510096DF14 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B592CE01DB8B6510096DF14 /* NotificationCenter.framework */; };
+		8B592CE51DB8B6510096DF14 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B592CE41DB8B6510096DF14 /* TodayViewController.m */; };
+		8B592CEC1DB8B6520096DF14 /* todayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B592CDF1DB8B6510096DF14 /* todayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B592CF41DB8D2490096DF14 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B592CF21DB8D2490096DF14 /* MainInterface.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,28 @@
 			remoteGlobalIDString = 8B1D11F01DB5F929000B6349;
 			remoteInfo = EVNTouchIDDemo;
 		};
+		8B592CEA1DB8B6520096DF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1D11E91DB5F929000B6349 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B592CDE1DB8B6510096DF14;
+			remoteInfo = todayWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B592CF01DB8B6520096DF14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B592CEC1DB8B6520096DF14 /* todayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B1D11F11DB5F929000B6349 /* EVNTouchIDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNTouchIDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +106,13 @@
 		8B4E8B091DB6133C0080E96C /* EVNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNHelper.h; sourceTree = "<group>"; };
 		8B4E8B0A1DB6133C0080E96C /* EVNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNHelper.m; sourceTree = "<group>"; };
 		8B4E8B0C1DB61E9D0080E96C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8B592CDF1DB8B6510096DF14 /* todayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = todayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B592CE01DB8B6510096DF14 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8B592CE31DB8B6510096DF14 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		8B592CE41DB8B6510096DF14 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		8B592CE91DB8B6510096DF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B592CF11DB8B7220096DF14 /* todayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todayWidget.entitlements; sourceTree = "<group>"; };
+		8B592CF31DB8D2490096DF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +131,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B592CDC1DB8B6510096DF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B592CE11DB8B6510096DF14 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +151,7 @@
 				8B1D121A1DB5F963000B6349 /* ViewControllers */,
 				8B1D11F31DB5F929000B6349 /* EVNTouchIDDemo */,
 				8B1D120D1DB5F929000B6349 /* EVNTouchIDDemoTests */,
+				8B592CE21DB8B6510096DF14 /* todayWidget */,
 				8B1D11F21DB5F929000B6349 /* Products */,
 				8B1D123B1DB601F2000B6349 /* Frameworks */,
 			);
@@ -121,6 +162,7 @@
 			children = (
 				8B1D11F11DB5F929000B6349 /* EVNTouchIDDemo.app */,
 				8B1D120A1DB5F929000B6349 /* EVNTouchIDDemoTests.xctest */,
+				8B592CDF1DB8B6510096DF14 /* todayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1D123C1DB601F2000B6349 /* LocalAuthentication.framework */,
+				8B592CE01DB8B6510096DF14 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,6 +267,18 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		8B592CE21DB8B6510096DF14 /* todayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8B592CF21DB8D2490096DF14 /* MainInterface.storyboard */,
+				8B592CF11DB8B7220096DF14 /* todayWidget.entitlements */,
+				8B592CE31DB8B6510096DF14 /* TodayViewController.h */,
+				8B592CE41DB8B6510096DF14 /* TodayViewController.m */,
+				8B592CE91DB8B6510096DF14 /* Info.plist */,
+			);
+			path = todayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,10 +289,12 @@
 				8B1D11ED1DB5F929000B6349 /* Sources */,
 				8B1D11EE1DB5F929000B6349 /* Frameworks */,
 				8B1D11EF1DB5F929000B6349 /* Resources */,
+				8B592CF01DB8B6520096DF14 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B592CEB1DB8B6520096DF14 /* PBXTargetDependency */,
 			);
 			name = EVNTouchIDDemo;
 			productName = EVNTouchIDDemo;
@@ -262,6 +319,23 @@
 			productReference = 8B1D120A1DB5F929000B6349 /* EVNTouchIDDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8B592CDE1DB8B6510096DF14 /* todayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B592CEF1DB8B6520096DF14 /* Build configuration list for PBXNativeTarget "todayWidget" */;
+			buildPhases = (
+				8B592CDB1DB8B6510096DF14 /* Sources */,
+				8B592CDC1DB8B6510096DF14 /* Frameworks */,
+				8B592CDD1DB8B6510096DF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = todayWidget;
+			productName = todayWidget;
+			productReference = 8B592CDF1DB8B6510096DF14 /* todayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +355,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8B1D11F01DB5F929000B6349;
 					};
+					8B592CDE1DB8B6510096DF14 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2H6767RL8U;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 8B1D11EC1DB5F929000B6349 /* Build configuration list for PBXProject "EVNTouchIDDemo" */;
@@ -298,6 +382,7 @@
 			targets = (
 				8B1D11F01DB5F929000B6349 /* EVNTouchIDDemo */,
 				8B1D12091DB5F929000B6349 /* EVNTouchIDDemoTests */,
+				8B592CDE1DB8B6510096DF14 /* todayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -332,6 +417,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B592CDD1DB8B6510096DF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B592CF41DB8D2490096DF14 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -358,6 +451,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B592CDB1DB8B6510096DF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B592CE51DB8B6510096DF14 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -365,6 +466,11 @@
 			isa = PBXTargetDependency;
 			target = 8B1D11F01DB5F929000B6349 /* EVNTouchIDDemo */;
 			targetProxy = 8B1D120B1DB5F929000B6349 /* PBXContainerItemProxy */;
+		};
+		8B592CEB1DB8B6520096DF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B592CDE1DB8B6510096DF14 /* todayWidget */;
+			targetProxy = 8B592CEA1DB8B6520096DF14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,6 +489,14 @@
 				8B1D12031DB5F929000B6349 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B592CF21DB8D2490096DF14 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B592CF31DB8D2490096DF14 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -528,6 +642,34 @@
 			};
 			name = Release;
 		};
+		8B592CED1DB8B6520096DF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = todayWidget/todayWidget.entitlements;
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = todayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemo.todayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8B592CEE1DB8B6520096DF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = todayWidget/todayWidget.entitlements;
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = todayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemo.todayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +699,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8B592CEF1DB8B6520096DF14 /* Build configuration list for PBXNativeTarget "todayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B592CED1DB8B6520096DF14 /* Debug */,
+				8B592CEE1DB8B6520096DF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
