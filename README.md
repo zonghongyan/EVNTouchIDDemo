@@ -1,7 +1,7 @@
 # EVNTouchIDDemo
 
 
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.20.38.png)
+详细说明见简书[iOS指纹识别登录流程及实现](http://www.jianshu.com/p/67fd93408517)
 
 ```
 /**
@@ -127,11 +127,6 @@
 
 ```
 
+##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.20.38.png)
 
 ##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.18.56.png)
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.18.39.png)
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.18.27.png)
-
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.19.55.png)
-
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/Screen%20Shot%202016-10-18%20at%2015.20.06.png)
