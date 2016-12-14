@@ -1,4 +1,4 @@
-# EVNTouchIDDemo
+### EVNTouchIDDemo
 
 
 [iOS指纹识别登录流程及实现](http://www.jianshu.com/p/67fd93408517)
@@ -132,3 +132,5 @@
 ```
 
 
+### License
+- [MIT](http://opensource.org/licenses/MIT)
