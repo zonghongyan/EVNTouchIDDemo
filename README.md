@@ -133,4 +133,4 @@
 
 
 ### License
-- [MIT](http://opensource.org/licenses/MIT)
+- [MIT](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/LICENSE)
