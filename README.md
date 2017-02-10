@@ -3,7 +3,8 @@
 
 [iOS指纹识别登录流程及实现](http://www.jianshu.com/p/67fd93408517)
 
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/touchid.gif)
+
+<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/touchid.gif" width="20%" height="20%" alt="展示图" >
 
 ##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-1a291c4684c42ac3.png)
 
