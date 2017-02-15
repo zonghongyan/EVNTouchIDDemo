@@ -22,7 +22,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>far.east.EVNTouchIDDemo.todayWidget</string>
+			<string>asdfasd.EVNTouchIDDemo.todayWidget</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>todayWidget</string>

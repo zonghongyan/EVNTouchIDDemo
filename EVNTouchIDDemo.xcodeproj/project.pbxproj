@@ -636,7 +636,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = EVNTouchIDDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = asdfasd.EVNTouchIDDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNTouchIDDemo.app/EVNTouchIDDemo";
 			};
@@ -648,7 +648,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = EVNTouchIDDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = asdfasd.EVNTouchIDDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNTouchIDDemo.app/EVNTouchIDDemo";
 			};
@@ -662,7 +662,7 @@
 				INFOPLIST_FILE = todayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemo.todayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = asdfasd.EVNTouchIDDemo.todayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -676,7 +676,7 @@
 				INFOPLIST_FILE = todayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = far.east.EVNTouchIDDemo.todayWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = asdfasd.EVNTouchIDDemo.todayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
