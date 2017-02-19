@@ -1,4 +1,4 @@
 osx_image: xcode8.2
 language: objective-c
-xcode_workspace: EVNTouchIDDemo.xcodeproj
+xcode_workspace: ./EVNTouchIDDemo.xcodeproj
 xcode_schemes: EVNTouchIDDemo
