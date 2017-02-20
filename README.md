@@ -1,7 +1,7 @@
 ### EVNTouchIDDemo
 
 [![Build Status](https://travis-ci.org/zonghongyan/EVNTouchIDDemo.svg?branch=master)](https://travis-ci.org/zonghongyan/EVNTouchIDDemo)
-
+[![License](https://img.shields.io/github/license/zonghongyan/EVNTouchIDDemo.svg?style=flat)](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/LICENSE)
 
 [iOS指纹识别登录流程及实现](http://www.jianshu.com/p/67fd93408517)
 
