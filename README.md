@@ -8,8 +8,8 @@
 
 <img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/touchid.gif" width="20%" height="20%" alt="Show the figure" >
 
-<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-1a291c4684c42ac3.png" width="20%" height="20%" alt="Show the figure" >
-<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-dd8751e1eabc6521.png" width="20%" height="20%" alt="Show the figure" >
+<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-1a291c4684c42ac3.png" width="45%" height="45%" alt="Show the figure" >
+<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-dd8751e1eabc6521.png" width="45%" height="45%" alt="Show the figure" >
 
 
 ```
