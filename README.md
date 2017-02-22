@@ -6,44 +6,42 @@
 [iOS指纹识别登录流程及实现](http://www.jianshu.com/p/67fd93408517)
 
 
-<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/touchid.gif" width="20%" height="20%" alt="展示图" >
+<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/touchid.gif" width="20%" height="20%" alt="Show the figure" >
 
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-1a291c4684c42ac3.png)
-
-##### ![](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-dd8751e1eabc6521.png)
-
+<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-1a291c4684c42ac3.png" width="20%" height="20%" alt="Show the figure" >
+<img src="https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/ResourcesImage/DemoImage/949086-dd8751e1eabc6521.png" width="20%" height="20%" alt="Show the figure" >
 
 
 ```
 /**
- * 指纹登录验证
+ * Login fingerprint verification
  */
 - (void)loadAuthentication
 {
-    LAContext *myContext = [[LAContext alloc] init];
-    // 这个属性是设置指纹输入失败之后的弹出框的选项
-    myContext.localizedFallbackTitle = @"忘记密码";
+    LAContext *myContext = [[LAContext alloc] init]; 
+    // This property is set fingerprint input after the failure of pop-up option
+    myContext.localizedFallbackTitle = @"Forgot password";
 
     NSError *authError = nil;
-    NSString *myLocalizedReasonString = @"请按住Home键完成验证";
-    // MARK: 判断设备是否支持指纹识别
+    NSString *myLocalizedReasonString = @"Please hold the Home button to complete the verification";
+    // MARK: Whether the equipment support fingerprint identification
     if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError])
     {
         [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:myLocalizedReasonString reply:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
-                NSLog(@"指纹认证成功");
+                NSLog(@"Fingerprint authentication success");
             }
             else
             {
-                NSLog(@"指纹认证失败，%@",error.description);
+                NSLog(@"Fingerprint authentication failed，%@",error.description);
 
-                NSLog(@"%ld", (long)error.code); // 错误码 error.code
+                NSLog(@"%ld", (long)error.code); // error.code
                 switch (error.code)
                 {
                     case LAErrorAuthenticationFailed: // Authentication was not successful, because user failed to provide valid credentials
                     {
-                        NSLog(@"授权失败"); // -1 连续三次指纹识别错误
+                        NSLog(@"Authorization failure"); // -1 Fingerprint identification error three times in a row
                     }
                         break;
                     case LAErrorUserCancel: // Authentication was canceled by user (e.g. tapped Cancel button)
@@ -137,7 +135,3 @@
 }
 
 ```
-
-
-### License
-- [MIT](https://github.com/zonghongyan/EVNTouchIDDemo/blob/master/LICENSE)
